@@ -1,0 +1,349 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 80%;
+  margin: auto;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#logo {
+  font-family: sans-serif;
+  flex: 1;
+}
+#logo span {
+  color: gold;
+}
+.header ul {
+  flex: 1;
+  justify-content: space-between;
+  display: flex;
+}
+.header ul li {
+  list-style: none;
+}
+.header {
+  height: 15vh;
+  font-family: sans-serif;
+}
+#home {
+  font-weight: bold;
+  color: darkslateblue;
+}
+#download {
+  background-color: darkblue;
+  color: darksalmon;
+  padding: 0.7rem 1rem;
+  border-radius: 20rem;
+  transition: 0.5s;
+}
+#download:hover {
+  background-color: white;
+  border: 2px solid darksalmon;
+  color: darkblue;
+}
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  height: 85vh;
+  align-items: center;
+  
+  /* background-color: blue; */
+}
+.main-section img {
+  height: 30rem;
+  width: 35rem;
+}
+.title h3 {
+  font-size: 0.9rem;
+  background-color: rgb(243, 238, 164);
+  color: rgb(139, 146, 3);
+  padding: 0.3rem;
+  width: 6rem;
+  text-align: center;
+  border-radius: 10rem;
+  
+}
+.title h4 {
+  font-size: 4rem;
+  color: darkblue;
+}
+.title p {
+  font-size: 1rem;
+  color: gold;
+  width: 30rem;
+}
+.title button {
+  color: white;
+  background-color: darkblue;
+  padding: 0.4rem;
+  border-radius: 20rem;
+  margin-top: 10px;
+  margin: 10px;
+}
+button:hover{
+  background-color: white;
+  color: darkblue;
+}
+.header_2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 30vh;
+  
+}
+.header_2 h3 {
+  background-color: rgb(243, 238, 164) ;
+  padding: 0.3rem;
+  color:rgb(139, 146, 3) ;
+  border-radius: 20rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.header_2 h4 {
+  font-size: 3rem;
+  font-family: sans-serif;
+
+}
+#header-p {
+  text-align: center;
+  width: 40rem;
+
+}
+.header-3-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  text-align: center;
+  
+}
+.header-3 {
+  text-align: center;
+  margin: 30px;
+  
+}
+
+#main {
+  height: 100vh;
+}
+.fa-solid {
+  font-size: 5rem;
+  margin: 30px;
+  color: darkblue;
+}
+.header-3 h5 {
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+.header-3 p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 25rem;
+}
+.fa-regular {
+  cursor: pointer;
+  color: antiquewhite;
+}
+.blackMod {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.Modecolor {
+  color: white;
+}
+.mainhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-img p {
+  font-size: 1rem;
+  color: gold;
+  width: 30rem;
+  
+}
+.div-img h2 {
+  font-size: 4rem;
+  color: darkblue;
+  
+}
+#p2 {
+  margin-top: 1.8rem;
+}
+#main-5 {
+  height: 90vh;
+}
+/* --- RESPONSIVE CSS cho Mobile (Max-width 768px) --- */
+@media (max-width: 768px) {
+    section {
+        /* Giúp nội dung không bị dính sát mép trên màn hình nhỏ */
+        width: 90%; 
+    }
+
+    /* --- Header / Navigation --- */
+    .header {
+        /* Chuyển bố cục header thành cột dọc hoặc căn chỉnh khác */
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    #logo {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .header ul {
+        /* Chuyển menu thành cột dọc, full width */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header ul li {
+        margin: 0.5rem 0;
+    }
+
+    #download {
+        /* Đảm bảo nút download vẫn dễ bấm */
+        display: block;
+        margin: 0.5rem auto;
+        width: fit-content;
+    }
+    
+    /* Ẩn biểu tượng mặt trời (tùy chọn) hoặc điều chỉnh vị trí nếu cần */
+    .fa-regular.fa-sun {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+    /* --- Main Section 1 (.main-section) --- */
+    .main-section {
+        /* Chuyển bố cục chính thành cột dọc */
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title h4 {
+        /* Giảm kích thước tiêu đề lớn */
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .title p {
+        /* Cho phép đoạn văn bản chiếm hết chiều rộng và căn giữa */
+        width: 100%;
+        text-align: justify;
+        margin: 1rem 0;
+    }
+
+    .main-section .img img {
+        /* Giảm kích thước hình ảnh */
+        max-width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+    
+    /* Điều chỉnh các nút bấm */
+    .title button {
+        /* Đảm bảo các nút dễ bấm và nằm trên một hàng mới */
+        margin: 0.5rem 0.5rem;
+        display: inline-block;
+    }
+
+
+    /* --- Section 2 (Features) --- */
+    #main {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .header_2 {
+        height: auto;
+        padding: 2rem 0 1rem;
+    }
+
+    .header_2 h4 {
+        font-size: 2rem;
+    }
+
+    #header-p {
+        width: 100%;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+    .header-3-main {
+        /* Chuyển các cột feature thành cột dọc */
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-3 {
+        margin: 20px 0;
+    }
+    
+    .header-3 p {
+        /* Cho phép đoạn văn bản chiếm hết chiều rộng và căn giữa */
+        width: 100%;
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+
+    /* --- Section 3 (Why our agency?) --- */
+    #main-5 {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .mainhead {
+        /* Chuyển bố cục chính thành cột dọc */
+        flex-direction: column;
+    }
+
+    .mainhead img {
+        /* Giảm kích thước hình ảnh */
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .div-img {
+        text-align: center;
+    }
+    
+    .div-img h2 {
+        font-size: 2.5rem;
+    }
+    
+    .div-img p {
+        width: 100%;
+        text-align: justify;
+        margin: 1rem 0;
+    }
+    
+    #p2 {
+        /* Điều chỉnh cho danh sách lợi ích */
+        text-align: left;
+        padding-left: 1rem;
+    }
+}
